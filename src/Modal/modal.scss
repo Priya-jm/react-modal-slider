@@ -1,0 +1,71 @@
+.slide-pane {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: 100%;
+  transition: transform 0.5s;
+  will-change: transform;
+  position: relative;
+
+  &:focus {
+    outline-style: none;
+  }
+
+  &--right {
+    margin-left: auto;
+    transform: translateX(100%);
+
+    &.ReactModal__Content--after-open {
+      transform: translateX(0%);
+    }
+
+    &.ReactModal__Content--before-close {
+      transform: translateX(100%);
+    }
+  }
+
+  &--left {
+    margin-right: auto;
+    transform: translateX(-100%);
+
+    &.ReactModal__Content--after-open {
+      transform: translateX(0%);
+    }
+
+    &.ReactModal__Content--before-close {
+      transform: translateX(-100%);
+    }
+  }
+
+  &--overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  &--overlay.ReactModal__Overlay--after-open {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+  }
+
+  &--overlay.ReactModal__Overlay--before-close {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &--close {
+    padding: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: transparent;
+    background-color: transparent;
+    
+    & img {
+      width: 1.5rem;
+      opacity: 0.7;
+    }
+  }
+}
