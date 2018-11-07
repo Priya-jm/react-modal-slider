@@ -14,6 +14,7 @@
   ],
   "homepage": "https://github.com/mallchel/react-modal-slider",
   "author": "sebastianalfabc@gmail.com",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/mallchel/react-modal-slider.git"
@@ -21,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/mallchel/react-modal-slider/issues"
   },
-  "private": true,
   "dependencies": {
     "@types/jest": "^23.3.9",
     "@types/node": "^10.12.2",
