@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactInstance, ReactNode, ReactType } from 'react';
+import React, { ReactType } from 'react';
 import ReactModal from 'react-modal';
 
 import './modal.scss';
@@ -52,22 +52,12 @@ export default class Modal extends React.Component<PropTypes, StateTypes> {
         className={`slide-pane ${directionClass} ${className || ''}`}
         overlayClassName={`slide-pane--overlay ${overlayClassName || ''}`}
         style={{
-          content: { width: this.props.width || '80%' },
+          content: { width: this.props.width || '60%' },
         }}
       >
         <div>
           {children}
-          {CloseComponent ? (
-            <CloseComponent />
-          ) : (
-            <button
-              className={'slide-pane--close'}
-              aria-label={'close'}
-              onClick={this.props.onRequestClose}
-            >
-              <img src={'/close.svg'} />
-            </button>
-          )}
+          {CloseComponent ? <CloseComponent /> : null}
         </div>
       </ReactModal>
     );

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Modal } from './Modal';
+import Modal from '../Modal';
+
+import './demo.scss';
 
 export default class Demo extends React.Component {
   state = {
@@ -14,8 +16,8 @@ export default class Demo extends React.Component {
   };
 
   renderCloseComponent = () => (
-    <button onClick={this.toggleVisibleModal}>
-      <img src={'/close.svg'} />
+    <button className={'close'} onClick={this.toggleVisibleModal}>
+      <img src={'/img/close.svg'} />
     </button>
   );
 
@@ -36,7 +38,7 @@ export default class Demo extends React.Component {
           // default false allows you to skip setAppElement prop for react-modal
           ariaHideApp={true}
           // optional
-          // closeComponent={this.renderCloseComponent}
+          closeComponent={this.renderCloseComponent}
         >
           Demo content for Modal
         </Modal>
