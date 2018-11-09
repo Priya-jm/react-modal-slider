@@ -45,11 +45,13 @@ export default class Demo extends React.Component {
         <Modal
           // default false
           isOpen={this.state.isOpen}
+          // default 60%
+          width={'40%'}
+          // default from right
+          directionFrom={'right'}
           // default Modal
           contentLabel={'Demo Modal'}
           onRequestClose={this.toggleVisibleModal}
-          // default from right
-          directionFrom={'right'}
           // optional for accessibility
           setAppElement={'#root'}
           // default false allows you to skip setAppElement prop for react-modal
