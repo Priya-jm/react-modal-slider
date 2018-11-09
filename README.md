@@ -7,6 +7,8 @@ I'm glad to introduce you react-modal-slider.
 
 [Demo](https://mallchel.github.io/react-modal-slider.html)
 
+[Demo on codesandbox](https://codesandbox.io/s/6z27rnz0lr)
+
 ## Install
 
 ```
