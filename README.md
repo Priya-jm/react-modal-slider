@@ -5,9 +5,7 @@ I'm glad to introduce you react-modal-slider.
 - This library based on the react-modal.
 - Open and close modal (animated) from right or left side
 
-[Demo](https://mallchel.github.io/react-modal-slider.html)
-
-[Demo on codesandbox](https://codesandbox.io/s/6z27rnz0lr)
+[Demo on codesandbox](https://codesandbox.io/s/github/mallchel/react-modal-slider)
 
 ## Install
 
