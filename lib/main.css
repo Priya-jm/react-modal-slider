@@ -1,4 +1,4 @@
-.slide-pane {
+.modal-slider {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -9,38 +9,38 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
   will-change: transform;
   position: relative; }
-  .slide-pane:focus {
+  .modal-slider:focus {
     outline-style: none; }
-  .slide-pane--right {
+  .modal-slider--right {
     margin-left: auto;
     -webkit-transform: translateX(100%);
             transform: translateX(100%); }
-    .slide-pane--right.ReactModal__Content--after-open {
+    .modal-slider--right.ReactModal__Content--after-open {
       -webkit-transform: translateX(0%);
               transform: translateX(0%); }
-    .slide-pane--right.ReactModal__Content--before-close {
+    .modal-slider--right.ReactModal__Content--before-close {
       -webkit-transform: translateX(100%);
               transform: translateX(100%); }
-  .slide-pane--left {
+  .modal-slider--left {
     margin-right: auto;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%); }
-    .slide-pane--left.ReactModal__Content--after-open {
+    .modal-slider--left.ReactModal__Content--after-open {
       -webkit-transform: translateX(0%);
               transform: translateX(0%); }
-    .slide-pane--left.ReactModal__Content--before-close {
+    .modal-slider--left.ReactModal__Content--before-close {
       -webkit-transform: translateX(-100%);
               transform: translateX(-100%); }
-  .slide-pane--overlay {
+  .modal-slider--overlay {
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px; }
-  .slide-pane--overlay.ReactModal__Overlay--after-open {
+  .modal-slider--overlay.ReactModal__Overlay--after-open {
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s; }
-  .slide-pane--overlay.ReactModal__Overlay--before-close {
+  .modal-slider--overlay.ReactModal__Overlay--before-close {
     background-color: rgba(0, 0, 0, 0); }
 

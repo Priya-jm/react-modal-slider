@@ -58,8 +58,12 @@ export default class Demo extends React.Component {
           setAppElement={'#root'}
           // default false allows you to skip setAppElement prop for react-modal
           ariaHideApp={true}
-          // optional
-          closeComponent={this.renderCloseComponent}
+          // allow you to set the maximum width of the viewport
+          // at which the modal will be expanded to full screen
+          maxMediaWidth={1024}
+          // allows you to decorate a className or overlayClassName
+          className={'string'}
+          overlayClassName={'string'}
         >
           Demo content for Modal
         </Modal>
