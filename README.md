@@ -64,6 +64,7 @@ export default class Demo extends React.Component {
           overlayClassName={'string'}
         >
           Demo content for Modal
+          {this.renderCloseComponent()}
         </Modal>
       </div>
     );
