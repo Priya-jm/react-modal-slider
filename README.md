@@ -1,6 +1,6 @@
 # react-modal-slider
 
-I'm glad to introduce you react-modal-slider.
+I'm excited to introduce you react-modal-slider.
 
 - This library based on the react-modal.
 - Open and close modal (animated) from right or left side
