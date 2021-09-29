@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@font-face {
+  font-family: 'verdana';
+  src:local('verdana'), url(./assets/fonts//verdana.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Heebo';
+  src:local('Heebo'), url(./assets/fonts/6xKhdSpbNNCT-sWACm7JLQ.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Prata';
+  src:local('Prata'), url(./assets/fonts/NGS6v5_NC0k9P9H0TbFzsQ.woff2) format('woff2');
+}
+body {
+  font-family: Heebo,Verdana,sans-serif !important; 
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  color: #8b8b8b;
+  letter-spacing: .4px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Prata,Verdana,sans-serif !important;
+  color: #212121;
+  font-weight: 400;
+  letter-spacing: .15em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
